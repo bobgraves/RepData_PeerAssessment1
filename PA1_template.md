@@ -96,7 +96,7 @@ sum(is.na(rawActivity[,'steps']))
 ## [1] 2304
 ```
 
-To fix (impute) the data, we estimate missing values of the number of steps for any given interval to be the average number of steps for that interval for the entire data set. The following R code transforms the rawActivity into imputedActivity by replacing steps that have NA values with the average steps for that interval. We use the variable name "imputed" in this corrected data set. 
+To fix (impute) the data, we use a strategy that estimates missing values of the number of steps for any given interval to be the average number of steps for that interval for the entire data set. The following R code transforms the rawActivity into imputedActivity by replacing steps that have NA values with the average steps for that interval. We use the variable name "imputed" in this corrected data set. 
 
 
 ```r
